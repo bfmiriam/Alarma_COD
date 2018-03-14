@@ -17,6 +17,7 @@ public class Alarma_COD {
         
         Alarma a = new Alarma();
         a.crearAlarma();
+        a.activarDesactivar();
         
     }
     
