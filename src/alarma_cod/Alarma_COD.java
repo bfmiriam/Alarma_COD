@@ -12,8 +12,11 @@ public class Alarma_COD {
      */
     public static void main(String[] args) {
         
-        Display d = new Display();
-        d.visualizarHora();
+//        Display d = new Display();
+//        d.visualizarHora();
+        
+        Alarma a = new Alarma();
+        a.crearAlarma();
         
     }
     
