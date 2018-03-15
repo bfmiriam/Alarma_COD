@@ -7,7 +7,7 @@ import java.util.TimerTask;
 import javax.swing.JOptionPane;
 
 /**
- *
+ *Esta clase crea la alarma, la enciende,apaga y ejecuta para que suene y se visualice
  * @author mbacelofernandez
  */
 public class Alarma {
@@ -16,11 +16,15 @@ public class Alarma {
     int hAlarma;
     int mAlarma;
     static boolean activado = false;
-
+    /**
+     * Constructor de la clase
+     */
     public Alarma() {
         timer = new Timer();
     }
-
+    /**
+     * crea la alarma
+     */
     public void crearAlarma() {
 
         hAlarma = Integer.parseInt(JOptionPane.showInputDialog("Introduce hora de la alarma"));
@@ -29,7 +33,9 @@ public class Alarma {
         System.out.println("Alarma creada: " + hAlarma + ":" + mAlarma);
 
     }
-
+    /**
+     * Enciende y apaga la alarma, determina cada cuanto tiempo sonara el TimerTask
+     */
     public void activarDesactivar() {
         if (activado == false) {
             activado = true;
@@ -44,7 +50,9 @@ public class Alarma {
             System.out.println("La alarma está desactivada");
         }
     }
-
+    /**
+     * Cuando la alarma programada coincide con la hora del sistema suena un beep y visualiza un Ring
+     */
     public class TicTac extends TimerTask {
 
         @Override

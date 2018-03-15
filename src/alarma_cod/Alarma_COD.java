@@ -2,7 +2,7 @@
 package alarma_cod;
 
 /**
- *
+ *Ejecuta el programa
  * @author mbacelofernandez
  */
 public class Alarma_COD {

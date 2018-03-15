@@ -3,11 +3,13 @@ package alarma_cod;
 import javax.swing.JOptionPane;
 
 /**
- *
+ *Creamos la botonera de la alarma
  * @author mbacelofernandez
  */
 public class Menu {
-
+    /**
+     * Menu del sistema asociado al metodo opciones de la clase display
+     */
     public void menu() {
 
         Alarma a = new Alarma();
